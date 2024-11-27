@@ -7,7 +7,7 @@ It sends a request to the server to generate the report in XLSX format and
 downloads the generated file.@param {Object} action - The action object
 containing the report details.@returns {Promise} - A promise that resolves
 when the report generation is complete.*/
-registry.category("ir.actions.report handlers").add("xlsx", async function (action) {
+registry.category("ir.actions.report handlers").add("xlsx_sale_summary", async function (action) {
    if (action.report_type === 'xlsx') {
         BlockUI;
          await download({
